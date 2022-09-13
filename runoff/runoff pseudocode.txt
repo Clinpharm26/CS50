@@ -1,0 +1,24 @@
+Bool vote:
+For voter[i], record votes by rank and name of candidates
+Vote is valid if candidate/s name matches name/s in candidate array
+Else return false
+
+Void tabulate:
+For each voter, tabulate the name, rank and elimination status per candidate voted for. Only do this if candidate is NOT eliminated.
+
+
+Print winner:
+If votes > votes_count/ 2, print candidate name for candidate with votes > votes_count/2
+Else continue
+
+Int find min:
+For all NON eliminated candidates, find the min votes
+
+Bool is_tie:
+For all NON eliminated candidates, if votes are a tie:
+If not the last remaining candidates, eliminate both candidates
+Else, declare both candidates a winner
+
+
+Void eliminate:
+If find_min = true for a candidate/s, eliminate the candidate/s
